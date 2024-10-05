@@ -35,6 +35,11 @@ const Navbar = ({ menuIdx }) => {
   // 이상한 json을 정리한게 parse
   useEffect(() => {
     console.log('Google Client ID:', googleClientId);
+    if (!googleClientId) {
+      console.warn('Google Client ID is not set');
+      return; // googleClientId가 설정되지 않은 경우 종료
+    }
+  
     if (window.google) {
       // 구글 아이디가 가져와졌을때
       window.google.accounts.id.initialize({
