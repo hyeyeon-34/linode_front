@@ -34,6 +34,7 @@ const Navbar = ({ menuIdx }) => {
   }, [dispatch]);
   // 이상한 json을 정리한게 parse
   useEffect(() => {
+    console.log('Google Client ID:', googleClientId);
     if (window.google) {
       // 구글 아이디가 가져와졌을때
       window.google.accounts.id.initialize({
