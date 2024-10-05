@@ -44,7 +44,6 @@ const Item = ({ task }) => {
       itemId: _id,
       isCompleted: newIsCompleted,
     };
-    // console.log(newIsCompleted);
     const options = {
       method: 'PATCH',
       headers: {
