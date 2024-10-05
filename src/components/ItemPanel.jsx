@@ -18,7 +18,7 @@ const ItemPanel = ({ pageTitle, filterCompleted, filterImportant }) => {
   const getTasksData = useSelector((state) => state.api.getItemsData);
 
   const [loading, setLoading] = useState(false);
-
+  console.log('되는거 맞아?')
   // console.log(isOpen);
   // console.log(userKey);
   // console.log(getTasksData);
